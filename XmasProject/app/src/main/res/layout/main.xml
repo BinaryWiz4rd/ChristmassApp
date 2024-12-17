@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adwent"
+    android:padding="8dp">
+    <GridLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:padding="8dp" />
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_below="@id/main"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp">
+        <TextView
+            android:id="@+id/historyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History:\nNo greetings or gifts yet!"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:padding="8dp" />
+    </ScrollView>
+    <Button
+        android:id="@+id/buttonGenerateGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Greeting"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF0000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/buttonGenerateGift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Gift"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#228B22"
+        android:layout_above="@id/buttonGenerateGreeting"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="117dp"
+        android:layout_height="281dp"
+        app:srcCompat="@drawable/renifer_twerk" />
+</RelativeLayout>
